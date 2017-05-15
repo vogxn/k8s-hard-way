@@ -13,6 +13,7 @@ gcloud -q compute http-health-checks delete kube-apiserver-health-check
 gcloud -q compute addresses delete kubernetes-the-hard-way --region us-central1
 
 gcloud -q compute firewall-rules delete \
+  kubernetes-nginx-service \
   allow-internal \
   allow-external \
   allow-healthz
