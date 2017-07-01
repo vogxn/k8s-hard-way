@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p certs
 pushd certs
 # Setup Kubernetes Server Certs
 KUBERNETES_PUBLIC_ADDRESS=$(gcloud compute addresses describe kubernetes-the-hard-way \
